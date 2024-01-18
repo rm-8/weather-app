@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         switch (weather_data.weather[0].main) {
             case 'Clouds':
-                weatherIcon.src = "images/clouds.png";
+                weatherIcon.src = "images/cloud.png";
                 break;
 
             case 'Clear':
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     inputBox.addEventListener('change', () => {
-        // Update weather information as the user types (on input change)
+        
         checkWeather(inputBox.value);
     });
 });
